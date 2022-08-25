@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
+import HomeComponent from '../components/HomeComponent';
 
-type Props = {}
+const Home:React.FC = () => {
+    return (
+        <div className='container'>
+                <HomeComponent />
+        </div>
+    );
+};
 
-type State = {}
-
-export default class Home extends Component<Props, State> {
-  state = {}
-
-  render() {
-    return <div>Home</div>
-  }
-}
+export default Home;
