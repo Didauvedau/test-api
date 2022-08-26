@@ -61,7 +61,12 @@ const HomeComponent: React.FC<UserProps> = (props) => {
   )
 }
 
-const getServerSideProps = async (ctx: { req: any; res: any }) => {
+export type Ctx = {
+  req: any
+  res: any
+}
+
+const getServerSideProps = async (ctx: Ctx) => {
   const { req, res } = ctx
   const session = getSession(req, res)
 
