@@ -8,8 +8,6 @@ import Link from 'next/link'
 const Home: NextPage = () => {
   const { user, error, isLoading } = useUser()
 
-  console.log(user?.picture)
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
